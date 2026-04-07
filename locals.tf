@@ -5,4 +5,4 @@ locals{
         Environment = var.environment
         Terraform = "true"
     }
-}
+} 
