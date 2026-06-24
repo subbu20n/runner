@@ -16,7 +16,7 @@ resource "aws_instance" "runner" {
     local.common_tags,
     {
         Name = "${var.project}-${var.environment}-runner"
-    }
+    }  
   )
 }
 
