@@ -12,7 +12,7 @@ resource "aws_instance" "runner" {
     volume_type = "gp3" # or "gp2", depending on your preference
   }
   user_data = file("runner.sh")
-  tags = merge(
+  tags = merge(     
     local.common_tags,
     {
         Name = "${var.project}-${var.environment}-runner"
